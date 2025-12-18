@@ -4,6 +4,7 @@ substitutions:
   _SERVICE_NAME: hello-cloud-run
 options:
   substitution_option: ALLOW_LOOSE
+  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
 steps:
   - id: Build image
     name: gcr.io/cloud-builders/docker
